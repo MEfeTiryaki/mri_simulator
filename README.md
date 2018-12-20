@@ -1,7 +1,7 @@
 # mri_simulator
 mri_simulator
 
-install g++ 6.3.0 for matlab mex compiler
+install g++ 6.3.0 for matlab mex compiler for different mirrors [mirrors](https://gcc.gnu.org/mirrors.html)
 ```bash
  wget ftp://ftp.fu-berlin.de/unix/languages/gcc/releases/gcc-6.3.0/gcc-6.3.0.tar.gz
  tar xvf gcc-6.3.0.tar.gz
