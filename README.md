@@ -48,5 +48,6 @@ cd objdir
 $PWD/../gcc-6.3.0/configure --prefix=/usr/bin/gcc-6.3 --enable-languages=c,c++,fortran,go --disable-multilib
 make -j 8
 make install
-
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-6.3 5 --slave /usr/bin/g++ g++ /usr/bin/g++-6.3
+sudo update-alternatives --config gcc
 ```
