@@ -51,3 +51,5 @@ make install
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-6.3 5 --slave /usr/bin/g++ g++ /usr/bin/g++-6.3
 sudo update-alternatives --config gcc
 ```
+
+Note : Eigen3.2.9 gcc5> içın derleyici uyarısı veriyor. 
