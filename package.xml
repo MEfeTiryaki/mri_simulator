@@ -10,5 +10,8 @@
   <buildtool_depend>catkin</buildtool_depend>
 
   <depend>eigen</depend>
-  <depend>python</depend>
+  <depend>ode_solver</depend>
+  <depend>plotgui</depend>
+
+
 </package>
