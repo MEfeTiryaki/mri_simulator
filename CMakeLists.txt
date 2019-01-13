@@ -11,7 +11,7 @@ find_package(catkin REQUIRED
 )
 
 find_package(Eigen3 REQUIRED)
-
+find_package(Boost REQUIRED  COMPONENTS system)
 find_package(Qt5Widgets REQUIRED)
 
 message(WARNING ${catkin_INCLUDE_DIRS})
@@ -32,16 +32,29 @@ include_directories(
 	include
   ${catkin_INCLUDE_DIRS}
 	${EIGEN3_INCLUDE_DIR}
+	${Boost_INCLUDE_DIRS}
 	${CMAKE_CURRENT_BINARY_DIR}
 )
 
 
-add_executable(mrisim
-	src/mri_sim.cpp
+#add_executable(mrisim
+#	src/mri_sim.cpp
+#)
+
+#target_link_libraries(mrisim
+#  #${PROJECT_NAME}
+#	${catkin_LIBRARIES}
+#  ${Qt5Widgets_LIBRARIES}
+#)
+
+
+add_executable(mri_test
+	src/mri_test.cpp
 )
 
-target_link_libraries(mrisim
+target_link_libraries(mri_test
   #${PROJECT_NAME}
 	${catkin_LIBRARIES}
+  ${Boost_LIBRARIES}
   ${Qt5Widgets_LIBRARIES}
 )
